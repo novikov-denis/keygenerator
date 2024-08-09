@@ -14,6 +14,7 @@ function showAssessmentFields() {
     document.getElementById('review-status-fields').classList.add('hidden');
     document.getElementById('characters-fields').classList.add('hidden');
     document.getElementById('test-results-fields').classList.add('hidden');
+    document.getElementById('assessment-image').classList.remove('hidden');  // Показываем картинку "ass.png"
 }
 
 function showReviewStatusFields() {
@@ -21,6 +22,7 @@ function showReviewStatusFields() {
     document.getElementById('assessment-fields').classList.add('hidden');
     document.getElementById('characters-fields').classList.add('hidden');
     document.getElementById('test-results-fields').classList.add('hidden');
+    document.getElementById('assessment-image').classList.add('hidden');  // Прячем картинку "ass.png", если она была показана
 }
 
 function showCharactersFields() {
@@ -28,6 +30,7 @@ function showCharactersFields() {
     document.getElementById('assessment-fields').classList.add('hidden');
     document.getElementById('review-status-fields').classList.add('hidden');
     document.getElementById('test-results-fields').classList.add('hidden');
+    document.getElementById('assessment-image').classList.add('hidden');  // Прячем картинку "ass.png", если она была показана
 }
 
 function showTestResultsFields() {
@@ -35,6 +38,7 @@ function showTestResultsFields() {
     document.getElementById('assessment-fields').classList.add('hidden');
     document.getElementById('review-status-fields').classList.add('hidden');
     document.getElementById('characters-fields').classList.add('hidden');
+    document.getElementById('assessment-image').classList.add('hidden');  // Прячем картинку "ass.png", если она была показана
 }
 
 function showTestResultsOptions() {
