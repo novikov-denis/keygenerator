@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'YS Text';
+    src: url('YS Text-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Druk Wide';
+    src: url('Druk Wide Cyr Super.otf') format('opentype');
+}
+
+body {
+    font-family: 'YS Text', Arial, sans-serif;
+    background-color: #F0F0F0;
+    margin: 0;
+    padding: 0;
+}
+
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('fon.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.loading-content {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.loading-content h1 {
+    font-family: 'Druk Wide', Arial, sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.loading-content input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.loading-content button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #42A663;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Остальные стили вашего сайта */
+
+.footer {
+    background-color: #42A663;
+    padding: 10px 0;
+}
+
+.marquee {
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'Druk Wide', Arial, sans-serif;
+    color: white;
+    font-size: 16px;
+}
+
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    -webkit-animation: scroll 20s infinite linear;
+    -moz-animation: scroll 20s infinite linear;
+    animation: scroll 20s infinite linear;
+}
