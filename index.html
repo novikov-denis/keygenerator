@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор ключей</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <h1>Привет! Для доступа к генератору введи пароль</h1>
+            <input type="password" id="password-input" placeholder="Введите пароль">
+            <button onclick="checkPassword()">Войти</button>
+            <p id="error-message" class="error-message hidden">Неверный пароль. Попробуйте еще раз.</p>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="header-left">
+            Генератор ключей
+        </div>
+        <div class="header-right">
+            <a href="https://tanker.yandex-team.ru/" class="button" target="_blank">Бежим в Танкер</a>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Основной контент сайта -->
+    </main>
+
+    <footer class="footer">
+        <h1 class="marquee"><span>Не забывай отписываться в канале #pranker, чтобы ключи проросли в production</span></h1>
+    </footer>
+
+    <div id="notification" class="notification hidden"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
